@@ -106,6 +106,8 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    faker (3.2.3)
+      i18n (>= 1.8.11, < 2)
     fuzzy-string-match (1.0.1)
       RubyInline (>= 3.8.6)
     globalid (1.2.1)
@@ -271,6 +273,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  faker (~> 3.0)
   fuzzy-string-match (~> 1.0, >= 1.0.1)
   importmap-rails
   jaro_winkler (~> 1.5)
