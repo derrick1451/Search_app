@@ -75,3 +75,5 @@ gem 'fuzzy-string-match', '~> 1.0', '>= 1.0.1'
 gem 'jaro_winkler', '~> 1.5'
 gem 'pg_search', '~> 2.3'
 gem 'will_paginate', '~> 3.3'
+
+gem 'faker', '~> 3.0'

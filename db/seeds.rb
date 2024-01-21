@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+user = User.create!(name: "John Doe")
+25.times do
+    Article.create!(
+      title: Faker::Movie.unique.title,
+      body: Faker::Lorem.paragraph_by_chars(number: 250),
+      user:
+    )
+  end
