@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+# search gem
+
+# gem 'pg_search'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.1"
 
@@ -47,6 +50,8 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  gem 'rspec-rails'
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -66,3 +71,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'jaro_winkler', '~> 1.5'
+gem 'fuzzy-string-match', '~> 1.0', '>= 1.0.1'
+gem 'pg_search', '~> 2.3'
+gem 'will_paginate', '~> 3.3'
