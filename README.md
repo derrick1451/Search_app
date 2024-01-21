@@ -17,9 +17,8 @@
 
 Link to live demo[coming soon]()
 
-**Note: Unfortunately, it wasn't possible to deploy on Heroku as they ended the free tier. So, I had to deploy on Render.**
+**Note: Unfortunately, it wasn't possible to deploy on Heroku or Render as they ended the free tier**
 
-Note 2: On the free tier, Render keeps the server sleeping while there's no requests, so it might take a little bit long to access the app.
 
 ## Getting Started
 
