@@ -1,0 +1,17 @@
+<section class="a-section">
+  <div class="a-section__content">
+    <ul class="a-vertical-list">
+      <% if @user_searches.empty? %>
+        <p class="a-section__empty">
+          &mdash;&nbsp; No searches &nbsp;&mdash;
+        </p>
+      <% else %>
+        <% @user_searches.entries.each do |title, count| %>
+          <li>
+            <%= render "search_data", search: {title:, count:} %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</section>
