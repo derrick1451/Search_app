@@ -1,0 +1,27 @@
+<div class = 'container'>
+    <div class= 'search-data'>
+        <h1>Search Articles</h1>
+        <%= form_with(url: articles_path, method: :get, data: {controller: "search-form", turbo_frame: "articles", turbo_action: "advance"}, class: "search-bar") do |form| %>
+      <%= form.text_field :query, 
+        class: "c-search-bar__input",
+        placeholder: "Search articles...",
+        autocomplete: "off",
+        data: {action: "input->search-form#search"} 
+      %>
+
+      <%= form.hidden_field :recorded, 
+        id: "confirmed-input", 
+        value: nil 
+      %> 
+    <% end %>
+        </div>
+
+<div class="section__content">
+    <%= render "articles", articles: @articles %>
+    
+    <div class="section__pagination">
+      <%= will_paginate @articles %>
+    </div>
+    </div>
+    
+    </div>
